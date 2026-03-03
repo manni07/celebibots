@@ -2,6 +2,15 @@
    CelebiBots — Interactive Scripts
    ═══════════════════════════════════════════════ */
 
+// ── Progress Bar ──────────────────────────────
+const progressBar = document.getElementById('progressBar');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / docHeight) * 100;
+  progressBar.style.width = progress + '%';
+});
+
 // ── Cursor Glow ────────────────────────────────
 const cursorGlow = document.getElementById('cursorGlow');
 let mouseX = 0, mouseY = 0, glowX = 0, glowY = 0;
@@ -292,6 +301,25 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (!isOpen) {
       item.classList.add('open');
     }
+  });
+});
+
+// ── 3D Card Tilt Effect ────────────────────────
+document.querySelectorAll('.service-card, .pricing-card, .proof-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const cx = rect.width / 2;
+    const cy = rect.height / 2;
+    const rotX = ((y - cy) / cy) * -8;
+    const rotY = ((x - cx) / cx) * 8;
+    card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-4px)`;
+    card.style.transition = 'transform 0.1s';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+    card.style.transition = 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
   });
 });
 

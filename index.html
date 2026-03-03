@@ -23,6 +23,9 @@
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
   <!-- Noise overlay -->
   <div class="noise"></div>
 
@@ -262,6 +265,33 @@
     </div>
   </section>
 
+  <!-- Results -->
+  <section class="section results">
+    <div class="container">
+      <div class="results-inner" data-animate="fade-up">
+        <div class="results-label">The Numbers</div>
+        <div class="results-grid">
+          <div class="result-item">
+            <div class="result-value"><span data-count="3">0</span><span class="result-unit">days</span></div>
+            <div class="result-desc">Average delivery<br>for standard bots</div>
+          </div>
+          <div class="result-item">
+            <div class="result-value"><span data-count="500">0</span><span class="result-unit">k+</span></div>
+            <div class="result-desc">Messages processed<br>by our bots daily</div>
+          </div>
+          <div class="result-item">
+            <div class="result-value"><span data-count="12">0</span><span class="result-unit">x</span></div>
+            <div class="result-desc">Faster than cloud<br>with local AI setup</div>
+          </div>
+          <div class="result-item">
+            <div class="result-value"><span data-count="0">0</span><span class="result-unit">€</span></div>
+            <div class="result-desc">API cost per query<br>with self-hosted AI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Tech -->
   <section class="section tech" id="tech">
     <div class="container">
@@ -425,8 +455,9 @@
   <section class="section social-proof">
     <div class="container">
       <div class="proof-grid" data-animate="fade-up">
-        <div class="proof-card">
-          <div class="proof-quote">"Delivered exactly what we needed in 2 days. The bot handles 500+ users daily without issues."</div>
+        <div class="proof-card" data-animate="fade-up" data-delay="0">
+          <div class="proof-stars">★★★★★</div>
+          <div class="proof-quote">"Delivered exactly what we needed in 2 days. The bot handles 500+ users daily without a single issue. Code quality is excellent."</div>
           <div class="proof-author">
             <div class="proof-avatar">A</div>
             <div>
@@ -435,8 +466,9 @@
             </div>
           </div>
         </div>
-        <div class="proof-card">
-          <div class="proof-quote">"Set up our entire local AI stack. Now we run models in-house instead of paying thousands for API calls."</div>
+        <div class="proof-card" data-animate="fade-up" data-delay="100">
+          <div class="proof-stars">★★★★★</div>
+          <div class="proof-quote">"Set up our entire local AI stack. We now run LLMs in-house — zero API cost, full privacy. The ROI was instant."</div>
           <div class="proof-author">
             <div class="proof-avatar">S</div>
             <div>
@@ -445,8 +477,9 @@
             </div>
           </div>
         </div>
-        <div class="proof-card">
-          <div class="proof-quote">"The automation workflow saves us 20 hours per week. Best investment we've made this year."</div>
+        <div class="proof-card" data-animate="fade-up" data-delay="200">
+          <div class="proof-stars">★★★★★</div>
+          <div class="proof-quote">"The automation workflow saves us 20 hours per week. Fixed price, no surprises. Best engineering investment this year."</div>
           <div class="proof-author">
             <div class="proof-avatar">M</div>
             <div>
