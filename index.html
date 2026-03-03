@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CelebiBots — AI-Powered Automation & Bot Development</title>
+  <meta name="description" content="Custom AI bots, automation workflows, and local AI infrastructure. Built by engineers who live and breathe AI.">
+  <meta name="theme-color" content="#050505">
+  <!-- Open Graph -->
+  <meta property="og:title" content="CelebiBots — AI-Powered Automation & Bot Development">
+  <meta property="og:description" content="Custom Telegram bots, AI automation workflows, and local AI infrastructure. No templates. No fluff. Just engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://celebi-dev.gitlab.io/celebibots">
+  <meta property="og:image" content="https://celebi-dev.gitlab.io/celebibots/og-image.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CelebiBots — AI-Powered Automation & Bot Development">
+  <meta name="twitter:description" content="Custom Telegram bots, AI automation workflows, and local AI infrastructure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Celebi<span class="logo-accent">Bots</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#tech" class="nav-link">Tech</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </div>
+      <a href="#contact" class="nav-cta">Start a Project</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge" data-animate="fade-up">
+        <span class="badge-dot"></span>
+        Available for new projects
+      </div>
+      <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+        We build AI systems<br>
+        <span class="hero-gradient">that actually work.</span>
+      </h1>
+      <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+        Custom Telegram bots, automation workflows, and local AI infrastructure.<br>
+        No templates. No fluff. Just engineering.
+      </p>
+      <div class="hero-actions" data-animate="fade-up" data-delay="300">
+        <a href="#contact" class="btn btn-primary">
+          <span>Get a Quote</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#services" class="btn btn-ghost">
+          <span>See What We Do</span>
+        </a>
+      </div>
+      <div class="hero-stats" data-animate="fade-up" data-delay="400">
+        <div class="stat">
+          <span class="stat-value" data-count="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value" data-count="99">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value" data-count="24">0</span><span class="stat-suffix">h</span>
+          <span class="stat-label">Avg. Response Time</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <section class="marquee-section">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Telegram Bots</span><span class="marquee-dot">◆</span>
+        <span>AI Agents</span><span class="marquee-dot">◆</span>
+        <span>GPT Integration</span><span class="marquee-dot">◆</span>
+        <span>Crypto Bots</span><span class="marquee-dot">◆</span>
+        <span>Local LLMs</span><span class="marquee-dot">◆</span>
+        <span>RAG Pipelines</span><span class="marquee-dot">◆</span>
+        <span>Workflow Automation</span><span class="marquee-dot">◆</span>
+        <span>Self-Hosted AI</span><span class="marquee-dot">◆</span>
+        <span>Telegram Bots</span><span class="marquee-dot">◆</span>
+        <span>AI Agents</span><span class="marquee-dot">◆</span>
+        <span>GPT Integration</span><span class="marquee-dot">◆</span>
+        <span>Crypto Bots</span><span class="marquee-dot">◆</span>
+        <span>Local LLMs</span><span class="marquee-dot">◆</span>
+        <span>RAG Pipelines</span><span class="marquee-dot">◆</span>
+        <span>Workflow Automation</span><span class="marquee-dot">◆</span>
+        <span>Self-Hosted AI</span><span class="marquee-dot">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">What We Build</span>
+        <h2 class="section-title">Three pillars of<br><span class="text-gradient">AI engineering.</span></h2>
+        <p class="section-desc">We don't do generic. Every solution is architected for your specific use case.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="6" width="36" height="36" rx="8"/>
+              <path d="M16 20l4 4-4 4M24 28h8"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Telegram Bots</h3>
+          <p class="service-desc">Custom bots with AI chat, crypto alerts, payment processing, group management, and more. Python/aiogram stack, production-ready.</p>
+          <ul class="service-features">
+            <li>GPT/Claude-powered conversations</li>
+            <li>Crypto price alerts & trading signals</li>
+            <li>Payment & subscription management</li>
+            <li>Custom commands & admin panels</li>
+          </ul>
+          <div class="service-footer">
+            <span class="service-price">From $60</span>
+            <a href="https://www.fiverr.com/s/akLgt" target="_blank" class="service-link">
+              View on Fiverr
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card featured" data-animate="fade-up" data-delay="100">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 24c0-8 5-16 12-16s12 8 12 16-5 16-12 16"/>
+              <path d="M24 8v32M8 24h32"/>
+              <circle cx="24" cy="24" r="4"/>
+            </svg>
+          </div>
+          <h3 class="service-title">AI Automation</h3>
+          <p class="service-desc">End-to-end automation workflows that connect your tools, process data, and make decisions. From lead gen to customer support.</p>
+          <ul class="service-features">
+            <li>Multi-step AI pipelines</li>
+            <li>API integrations & webhooks</li>
+            <li>Scheduled tasks & monitoring</li>
+            <li>Custom dashboards & reports</li>
+          </ul>
+          <div class="service-footer">
+            <span class="service-price">From $90</span>
+            <a href="https://www.fiverr.com/s/XLyg" target="_blank" class="service-link">
+              View on Fiverr
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card" data-animate="fade-up" data-delay="200">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="12" width="32" height="24" rx="4"/>
+              <path d="M16 22h4v8h-4zM22 18h4v12h-4zM28 20h4v10h-4z"/>
+              <circle cx="14" cy="16" r="1.5" fill="currentColor"/>
+              <circle cx="19" cy="16" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Local AI Setup</h3>
+          <p class="service-desc">Run AI models on your own hardware. Complete Ollama setup with WebUI, RAG pipelines, and GPU optimization. Your data stays yours.</p>
+          <ul class="service-features">
+            <li>Ollama + Open WebUI deployment</li>
+            <li>RAG with your documents</li>
+            <li>GPU optimization & benchmarks</li>
+            <li>Docker-based architecture</li>
+          </ul>
+          <div class="service-footer">
+            <span class="service-price">From $90</span>
+            <a href="https://www.fiverr.com/s/qD1V" target="_blank" class="service-link">
+              View on Fiverr
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">From idea to<br><span class="text-gradient">production in days.</span></h2>
+      </div>
+      <div class="process-timeline">
+        <div class="process-line"></div>
+        <div class="process-step" data-animate="fade-up" data-delay="0">
+          <div class="step-marker">
+            <span>01</span>
+          </div>
+          <div class="step-content">
+            <h3>Discovery Call</h3>
+            <p>You tell us what you need. We ask the right questions and scope the project. No jargon, no BS.</p>
+          </div>
+        </div>
+        <div class="process-step" data-animate="fade-up" data-delay="100">
+          <div class="step-marker">
+            <span>02</span>
+          </div>
+          <div class="step-content">
+            <h3>Architecture & Quote</h3>
+            <p>We design the system, pick the right tech stack, and give you a fixed price. No surprises.</p>
+          </div>
+        </div>
+        <div class="process-step" data-animate="fade-up" data-delay="200">
+          <div class="step-marker">
+            <span>03</span>
+          </div>
+          <div class="step-content">
+            <h3>Build & Iterate</h3>
+            <p>We build fast. You get daily updates and can test intermediate versions. Revisions included.</p>
+          </div>
+        </div>
+        <div class="process-step" data-animate="fade-up" data-delay="300">
+          <div class="step-marker">
+            <span>04</span>
+          </div>
+          <div class="step-content">
+            <h3>Deploy & Support</h3>
+            <p>We deploy to your infrastructure, hand over the docs, and provide post-launch support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech -->
+  <section class="section tech" id="tech">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Our Stack</span>
+        <h2 class="section-title">Built with<br><span class="text-gradient">serious tools.</span></h2>
+        <p class="section-desc">We use battle-tested technologies. No hype-driven decisions.</p>
+      </div>
+      <div class="tech-grid" data-animate="fade-up" data-delay="100">
+        <div class="tech-card">
+          <div class="tech-icon">🐍</div>
+          <span>Python</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">⚡</div>
+          <span>FastAPI</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🤖</div>
+          <span>aiogram</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🧠</div>
+          <span>OpenAI / Claude</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🦙</div>
+          <span>Ollama</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🐳</div>
+          <span>Docker</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">📊</div>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🔴</div>
+          <span>Redis</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🌐</div>
+          <span>Node.js</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🔗</div>
+          <span>LangChain</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">📡</div>
+          <span>WebSockets</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">☁️</div>
+          <span>AWS / VPS</span>
+        </div>
+      </div>
+      <!-- Terminal Demo -->
+      <div class="terminal" data-animate="fade-up" data-delay="200">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">celebibots — deployment</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="terminal-line">
+            <span class="prompt">$</span>
+            <span class="cmd" id="terminalCmd"></span>
+            <span class="cursor">▊</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Pricing</span>
+        <h2 class="section-title">Transparent pricing.<br><span class="text-gradient">No hidden fees.</span></h2>
+        <p class="section-desc">Pick a package or tell us what you need. Every project gets a fixed quote upfront.</p>
+      </div>
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <div class="pricing-card" data-animate="fade-up" data-delay="0">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <p class="pricing-desc">Perfect for simple bots and quick automations</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">60</span>
+            <span class="price-period">starting</span>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Single bot or workflow</li>
+            <li><span class="check">✓</span> Up to 5 commands/features</li>
+            <li><span class="check">✓</span> Basic AI integration</li>
+            <li><span class="check">✓</span> 3-day delivery</li>
+            <li><span class="check">✓</span> 1 revision round</li>
+            <li><span class="check">✓</span> Documentation included</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+        <!-- Pro -->
+        <div class="pricing-card featured" data-animate="fade-up" data-delay="100">
+          <div class="pricing-badge">Best Value</div>
+          <div class="pricing-header">
+            <h3>Professional</h3>
+            <p class="pricing-desc">For serious projects that need real engineering</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">150</span>
+            <span class="price-period">starting</span>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Multi-feature bot or workflow</li>
+            <li><span class="check">✓</span> Advanced AI (GPT/Claude/local)</li>
+            <li><span class="check">✓</span> Database integration</li>
+            <li><span class="check">✓</span> Admin dashboard</li>
+            <li><span class="check">✓</span> 5-day delivery</li>
+            <li><span class="check">✓</span> 2 revision rounds</li>
+            <li><span class="check">✓</span> Deployment & setup</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <!-- Enterprise -->
+        <div class="pricing-card" data-animate="fade-up" data-delay="200">
+          <div class="pricing-header">
+            <h3>Enterprise</h3>
+            <p class="pricing-desc">Full-scale AI systems and infrastructure</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">300</span>
+            <span class="price-period">starting</span>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Complete AI infrastructure</li>
+            <li><span class="check">✓</span> Multi-model architecture</li>
+            <li><span class="check">✓</span> RAG pipeline setup</li>
+            <li><span class="check">✓</span> Custom training/fine-tuning</li>
+            <li><span class="check">✓</span> 7-day delivery</li>
+            <li><span class="check">✓</span> 3 revision rounds</li>
+            <li><span class="check">✓</span> Priority support</li>
+            <li><span class="check">✓</span> Source code handover</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Social Proof -->
+  <section class="section social-proof">
+    <div class="container">
+      <div class="proof-grid" data-animate="fade-up">
+        <div class="proof-card">
+          <div class="proof-quote">"Delivered exactly what we needed in 2 days. The bot handles 500+ users daily without issues."</div>
+          <div class="proof-author">
+            <div class="proof-avatar">A</div>
+            <div>
+              <div class="proof-name">Alex M.</div>
+              <div class="proof-role">Crypto Community Admin</div>
+            </div>
+          </div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-quote">"Set up our entire local AI stack. Now we run models in-house instead of paying thousands for API calls."</div>
+          <div class="proof-author">
+            <div class="proof-avatar">S</div>
+            <div>
+              <div class="proof-name">Sarah K.</div>
+              <div class="proof-role">CTO, DataFlow Inc.</div>
+            </div>
+          </div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-quote">"The automation workflow saves us 20 hours per week. Best investment we've made this year."</div>
+          <div class="proof-author">
+            <div class="proof-avatar">M</div>
+            <div>
+              <div class="proof-name">Marcus R.</div>
+              <div class="proof-role">Operations Lead</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Questions?<br><span class="text-gradient">We've got answers.</span></h2>
+      </div>
+      <div class="faq-list" data-animate="fade-up" data-delay="100">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What tech stack do you use for Telegram bots?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Python with aiogram 3.x for Telegram API, FastAPI for webhooks, PostgreSQL or SQLite for data, Redis for caching. For AI features we integrate OpenAI, Anthropic, or local models via Ollama — depending on your privacy requirements and budget.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I run AI models without sending data to OpenAI?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Our Local AI Setup service deploys open-source models (LLaMA, Mistral, DeepSeek, Qwen) on your own hardware via Ollama. Your data never leaves your network. We optimize for your GPU and set up a beautiful WebUI.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How fast is delivery?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Simple bots: 1–3 days. Full automation workflows: 3–5 days. Enterprise setups: 5–7 days. We move fast because we've built these systems before and have battle-tested templates as a starting point.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What if I need something custom?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Most projects are custom. The packages are starting points. Reach out with your requirements and we'll scope a solution specifically for your use case. Fixed-price quote, no hourly billing surprises.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer ongoing support?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Every project includes a support window (varies by package). After that, we offer monthly maintenance plans or ad-hoc support. We don't build and disappear.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta" id="contact">
+    <div class="container">
+      <div class="cta-card" data-animate="fade-up">
+        <div class="cta-bg"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to build<br>something <span class="text-gradient">extraordinary?</span></h2>
+          <p class="cta-desc">Tell us about your project. We'll get back to you within 24 hours with a plan and quote.</p>
+          <div class="cta-actions">
+            <a href="https://www.fiverr.com/celebidev" target="_blank" class="btn btn-primary btn-lg">
+              <span>Hire Us on Fiverr</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://t.me/celebib_bot" target="_blank" class="btn btn-ghost btn-lg">
+              <span>💬 Chat on Telegram</span>
+            </a>
+          </div>
+          <p class="cta-note">Or email us at <a href="mailto:celebidev@gmail.com">celebidev@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">Celebi<span class="logo-accent">Bots</span></span>
+          <p class="footer-tagline">AI engineering, done right.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="mailto:celebidev@gmail.com">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.fiverr.com/celebidev" target="_blank" aria-label="Fiverr" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.86.41-.86.86v2.845h.86c.55 0 .85-.41.85-.86v-.86h.85v.86c0 .97-.68 1.71-1.7 1.71h-.86v.86h-1.71v-.86h-.86c-1.02 0-1.71-.74-1.71-1.71v-2.84c0-.97.69-1.72 1.71-1.72h.86v-.86h1.71v.86h.85c1.02 0 1.71.75 1.71 1.72v.86h-.85zm-4.26 0h-.86v3.705h-.86v-3.705h-.85v-.86h.85v-.86c0-.97.69-1.71 1.71-1.71h.86v.86h-.86c-.54 0-.85.41-.85.85v.86h1.71v.86z"/></svg>
+          </a>
+          <a href="https://t.me/celebib_bot" target="_blank" aria-label="Telegram" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 1 0 24 12.056A12.014 12.014 0 0 0 11.944 0Zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.504-1.36 8.629-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a href="mailto:celebidev@gmail.com" aria-label="Email" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 CelebiBots. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
