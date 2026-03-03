@@ -2,7 +2,7 @@ pages:
   stage: deploy
   script:
     - mkdir -p public
-    - cp index.html style.css script.js og-image.png favicon.png public/
+    - cp index.html style.css script.js og-image.png favicon.png img-*.png public/
   artifacts:
     paths:
       - public

@@ -210,6 +210,7 @@ body:hover .cursor-glow {
   justify-content: center;
   overflow: hidden;
   padding: 120px 24px 80px;
+  background: url('img-hero-grid.png') center bottom / cover no-repeat;
 }
 
 .hero-canvas {
@@ -1232,17 +1233,104 @@ body:hover .cursor-glow {
   background: linear-gradient(90deg, transparent, var(--accent-dim), transparent);
 }
 
-/* ── Glow orbs (background decoration) ───────── */
+/* ── Section Background Images ───────────────── */
 .services {
-  background: radial-gradient(ellipse 60% 40% at 20% 50%, rgba(0, 255, 136, 0.03) 0%, transparent 50%);
+  background: 
+    radial-gradient(ellipse 60% 40% at 20% 50%, rgba(0, 255, 136, 0.03) 0%, transparent 50%),
+    url('img-fractal-hex.png') center / cover no-repeat;
+  background-blend-mode: screen;
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--bg) 0%, rgba(5,5,5,0.75) 15%, rgba(5,5,5,0.75) 85%, var(--bg) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.services > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.tech {
+  background: 
+    url('img-circuit.png') center / cover no-repeat;
+}
+
+.tech::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--bg) 0%, rgba(5,5,5,0.82) 15%, rgba(5,5,5,0.82) 85%, var(--bg) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.tech > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .pricing {
-  background: radial-gradient(ellipse 60% 40% at 80% 50%, rgba(0, 212, 255, 0.03) 0%, transparent 50%);
+  background: 
+    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(0, 212, 255, 0.03) 0%, transparent 50%),
+    url('img-topographic.png') center / cover no-repeat;
+  background-blend-mode: screen;
+}
+
+.pricing::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--bg) 0%, rgba(5,5,5,0.8) 15%, rgba(5,5,5,0.8) 85%, var(--bg) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pricing > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.social-proof {
+  background: url('img-nodes.png') center / cover no-repeat;
+}
+
+.social-proof::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--bg) 0%, rgba(5,5,5,0.78) 15%, rgba(5,5,5,0.78) 85%, var(--bg) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.social-proof {
+  position: relative;
+}
+
+.social-proof > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .cta {
-  background: radial-gradient(ellipse 50% 50% at 50% 100%, rgba(0, 255, 136, 0.04) 0%, transparent 50%);
+  background: 
+    radial-gradient(ellipse 50% 50% at 50% 100%, rgba(0, 255, 136, 0.04) 0%, transparent 50%);
+}
+
+/* ── Waves divider ───────────────────────────── */
+.waves-divider {
+  width: 100%;
+  height: 120px;
+  background: url('img-waves.png') center / cover no-repeat;
+  opacity: 0.6;
+  margin: -60px 0;
+  position: relative;
+  z-index: 1;
 }
 
 /* ── Footer ──────────────────────────────────── */
